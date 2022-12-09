@@ -1,47 +1,70 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+	<header>
+		<img src="src/assets/svg/logo.svg"/>
+	</header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+	<main>
+		<section>
+			<h1>World’s best CSS grid templates</h1>
+			<p>Discover the best, most lightweight templates made with CSS grid.</p>
+		</section>
+		<section>
+			<div class="grid">
+				<div
+					v-for="(grid, index) in gridLayouts"
+					:key="index"
+					class="grid-card-container"
+					@click="onGridLayoutClick(grid, index)"
+				>
+					<img class="card-image" :src="grid.thumbnailSrc" alt="Grid card image"/>
+				</div>
+			</div>
+		</section>
 
-  <main>
-    <TheWelcome />
-  </main>
+		<section></section>
+	</main>
+
+  	<footer>
+		Made with
+		<img src="src/assets/svg/heart.svg"/>
+  	</footer>
+
+	<teleport to="body">
+		<PreviewGridModal v-if="showModal" />
+	</teleport>
 </template>
 
+<script>
+import { useStore } from './store/index'
+import { mapState } from 'pinia'
+
+import gridLayouts from './services/constants.js'
+import PreviewGridModal from './components/modals/PreviewModal.vue'
+
+export default {
+    components: {
+      PreviewGridModal
+    },
+    data() {
+        return {
+			store: useStore(),
+            gridLayouts
+        };
+    },
+    computed: {
+      ...mapState(useStore, ['showModal'])
+    },
+    methods: {
+        onGridLayoutClick(grid, index) {
+			this.store.$patch({
+				showModal: true,
+				selectedGrid: grid
+			});
+        }
+    }
+}
+</script>
+
+
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>

@@ -1,0 +1,87 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+    border-bottom: 1px solid #dadada;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 34px;
+}
+
+p {
+    margin: 0;
+    font-size: 22px;
+}
+
+section {
+    padding: 120px 100px 0 100px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+}
+
+.card-image {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+.card-image:hover {
+    transform: scale(1.01);
+}
+
+footer {
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 100px;
+    border-top: 1px solid #dadada;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    section {
+        padding: 80px 40px 0 40px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}
