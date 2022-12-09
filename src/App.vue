@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<img src="src/assets/svg/logo.svg"/>
+		<img src="/assets/svg/logo.svg"/>
 	</header>
 
 	<main>
@@ -26,7 +26,7 @@
 
   	<footer>
 		Made with
-		<img src="src/assets/svg/heart.svg"/>
+		<img src="/assets/svg/heart.svg"/>
   	</footer>
 
 	<teleport to="body">

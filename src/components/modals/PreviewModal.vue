@@ -20,7 +20,7 @@
                 </div>
                 <img
                     class="close-icon"
-                    src="src/assets/svg/close.svg"
+                    src="/assets/svg/close.svg"
                     @click="store.$patch({ showModal: false })"
                 />
             </div>
