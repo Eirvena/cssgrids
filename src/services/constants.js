@@ -1,34 +1,34 @@
 const gridLayouts = [{
         id: 'grid1',
         title: 'Layout 1',
-        thumbnailSrc: 'src/assets/img/thumbnails/thumbnail-1.png',
+        thumbnailSrc: '/assets/img/thumbnails/thumbnail-1.png',
         images: [
-            'src/assets/img/grid-images/grid-1/grid1-image-1.png',
-            'src/assets/img/grid-images/grid-1/grid1-image-2.png',
-            'src/assets/img/grid-images/grid-1/grid1-image-3.png',
-            'src/assets/img/grid-images/grid-1/grid1-image-4.png',
-            'src/assets/img/grid-images/grid-1/grid1-image-5.png',
-            'src/assets/img/grid-images/grid-1/grid1-image-6.png'
+            '/assets/img/grid-images/grid-1/grid1-image-1.png',
+            '/assets/img/grid-images/grid-1/grid1-image-2.png',
+            '/assets/img/grid-images/grid-1/grid1-image-3.png',
+            '/assets/img/grid-images/grid-1/grid1-image-4.png',
+            '/assets/img/grid-images/grid-1/grid1-image-5.png',
+            '/assets/img/grid-images/grid-1/grid1-image-6.png'
         ],
         htmlCode: `
 <div class="grid">
     <div class="grid-box box-1">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-1/grid1-image-1.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-1/grid1-image-1.png">
     </div>
     <div class="grid-box box-2">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-1/grid1-image-2.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-1/grid1-image-2.png">
     </div>
     <div class="grid-box box-3">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-1/grid1-image-3.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-1/grid1-image-3.png">
     </div>
     <div class="grid-box box-4">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-1/grid1-image-4.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-1/grid1-image-4.png">
     </div>
     <div class="grid-box box-5">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-1/grid1-image-5.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-1/grid1-image-5.png">
     </div>
     <div class="grid-box box-6">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-1/grid1-image-6.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-1/grid1-image-6.png">
     </div>
 </div>`,
         cssCode: `
@@ -87,26 +87,26 @@ const gridLayouts = [{
     {
         id: 'grid2',
         title: 'Layout 2',
-        thumbnailSrc: 'src/assets/img/thumbnails/thumbnail-2.png',
+        thumbnailSrc: '/assets/img/thumbnails/thumbnail-2.png',
         images: [
-            'src/assets/img/grid-images/grid-2/grid2-image-1.png',
-            'src/assets/img/grid-images/grid-2/grid2-image-2.png',
-            'src/assets/img/grid-images/grid-2/grid2-image-3.png',
-            'src/assets/img/grid-images/grid-2/grid2-image-4.png'
+            '/assets/img/grid-images/grid-2/grid2-image-1.png',
+            '/assets/img/grid-images/grid-2/grid2-image-2.png',
+            '/assets/img/grid-images/grid-2/grid2-image-3.png',
+            '/assets/img/grid-images/grid-2/grid2-image-4.png'
         ],
         htmlCode: `
 <div class="grid">
     <div class="grid-box box-1">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-2/grid2-image-1.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-2/grid2-image-1.png">
     </div>
     <div class="grid-box box-2">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-2/grid2-image-2.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-2/grid2-image-2.png">
     </div>
     <div class="grid-box box-3">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-2/grid2-image-3.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-2/grid2-image-3.png">
     </div>
     <div class="grid-box box-4">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-2/grid2-image-4.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-2/grid2-image-4.png">
     </div>
 </div>`,
         cssCode: `
@@ -153,26 +153,26 @@ const gridLayouts = [{
     {
         id: 'grid3',
         title: 'Layout 3',
-        thumbnailSrc: 'src/assets/img/thumbnails/thumbnail-3.png',
+        thumbnailSrc: '/assets/img/thumbnails/thumbnail-3.png',
         images: [
-            'src/assets/img/grid-images/grid-3/grid3-image-1.png',
-            'src/assets/img/grid-images/grid-3/grid3-image-2.png',
-            'src/assets/img/grid-images/grid-3/grid3-image-3.png',
-            'src/assets/img/grid-images/grid-3/grid3-image-4.png'
+            '/assets/img/grid-images/grid-3/grid3-image-1.png',
+            '/assets/img/grid-images/grid-3/grid3-image-2.png',
+            '/assets/img/grid-images/grid-3/grid3-image-3.png',
+            '/assets/img/grid-images/grid-3/grid3-image-4.png'
         ],
         htmlCode: `
 <div class="grid">
     <div class="grid-box box-1">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-3/grid3-image-1.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-3/grid3-image-1.png">
     </div>
     <div class="grid-box box-2">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-3/grid3-image-2.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-3/grid3-image-2.png">
     </div>
     <div class="grid-box box-3">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-3/grid3-image-3.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-3/grid3-image-3.png">
     </div>
     <div class="grid-box box-4">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-3/grid3-image-4.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-3/grid3-image-4.png">
     </div>
 </div>`,
         cssCode: `
@@ -219,26 +219,26 @@ const gridLayouts = [{
     {
         id: 'grid4',
         title: 'Layout 4',
-        thumbnailSrc: 'src/assets/img/thumbnails/thumbnail-4.png',
+        thumbnailSrc: '/assets/img/thumbnails/thumbnail-4.png',
         images: [
-            'src/assets/img/grid-images/grid-4/grid4-image-1.png',
-            'src/assets/img/grid-images/grid-4/grid4-image-2.png',
-            'src/assets/img/grid-images/grid-4/grid4-image-3.png',
-            'src/assets/img/grid-images/grid-4/grid4-image-4.png'
+            '/assets/img/grid-images/grid-4/grid4-image-1.png',
+            '/assets/img/grid-images/grid-4/grid4-image-2.png',
+            '/assets/img/grid-images/grid-4/grid4-image-3.png',
+            '/assets/img/grid-images/grid-4/grid4-image-4.png'
         ],
         htmlCode: `
 <div class="grid">
     <div class="grid-box box-1">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-4/grid4-image-1.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-4/grid4-image-1.png">
     </div>
     <div class="grid-box box-2">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-4/grid4-image-2.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-4/grid4-image-2.png">
     </div>
     <div class="grid-box box-3">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-4/grid4-image-3.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-4/grid4-image-3.png">
     </div>
     <div class="grid-box box-4">
-        <img class="grid-img" src="src/assets/img/grid-images/grid-4/grid4-image-4.png">
+        <img class="grid-img" src="/assets/img/grid-images/grid-4/grid4-image-4.png">
     </div>
 </div>`,
         cssCode: `
